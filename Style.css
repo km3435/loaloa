@@ -651,3 +651,35 @@ img, video, iframe { max-width: 100%; }
   .voice-bar-mid { min-width: 140px; }
   .voice-bar-call { margin-inline-start: auto; }
 }
+
+/* ===== إصلاح بادجات الهيرو على الموبايل (لازم يفضل في آخر الملف) ===== */
+@media (max-width: 600px) {
+  .hero-badges-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-badges-row .exp-badge,
+  .hero-badges-row .clients-badge {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 14px 8px 10px;
+    margin: 0;
+  }
+
+  .hero-badges-row .exp-badge-text,
+  .hero-badges-row .clients-badge-text {
+    display: flex !important;
+    text-align: right;
+  }
+
+  .hero-badges-row .exp-badge-num,
+  .hero-badges-row .clients-badge-num { font-size: 15px; }
+
+  .hero-badges-row .exp-badge-label,
+  .hero-badges-row .clients-badge-label { font-size: 11px; }
+}
